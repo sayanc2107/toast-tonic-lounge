@@ -54,7 +54,11 @@ export function SiteFooter() {
               {site.phone.display}
             </a>
           </p>
-          <p className="mt-3 text-sm text-muted-foreground">{site.hoursNote}</p>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Mon–Thu &amp; Sun 12:30 pm – 12 am
+            <br />
+            Fri–Sat 12:30 pm – 1 am
+          </p>
           <ExternalLink
             href={site.links.listing}
             className="mt-2 inline-block text-sm text-primary underline decoration-rule underline-offset-4 hover:decoration-primary"
