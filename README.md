@@ -1,4 +1,4 @@
-# Toast & Tonic Lounge
+# Toast & Tonic Lounge 
 
 # Website Generation Prompt — Toast & Tonic, Manikonda
 
