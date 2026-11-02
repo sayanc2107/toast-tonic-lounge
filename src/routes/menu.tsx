@@ -180,7 +180,7 @@ function FoodMenu({ diet, setDiet }: { diet: Diet; setDiet: (d: string) => void 
               onChange={(e) => setQuery(e.target.value)}
               placeholder={`Search ${dietLabel[diet].toLowerCase()} dishes`}
               autoComplete="off"
-              className="h-11 w-full rounded-full border border-input bg-transparent pl-11 pr-10 text-sm placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none"
+              className="h-11 w-full appearance-none rounded-full border border-input bg-transparent pl-11 pr-10 [&::-webkit-search-cancel-button]:appearance-none text-sm placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none"
             />
             {query && (
               <button
