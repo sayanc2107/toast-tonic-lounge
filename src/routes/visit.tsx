@@ -11,6 +11,7 @@ import {
 } from "@/components/site/actions";
 import { InstagramSection } from "@/components/site/instagram-section";
 import { Reveal } from "@/components/site/reveal";
+import { HoursList } from "@/components/site/hours-list";
 import { site } from "@/lib/site";
 
 const TITLE = "Visit Us — Toast & Tonic, Lanco Hills Road, Manikonda";
@@ -97,8 +98,8 @@ function VisitPage() {
               <p className="mt-1 text-xs text-muted-foreground">{site.phone.local}</p>
             </InfoRow>
             <InfoRow icon={<Clock aria-hidden />} label="Hours">
-              <p>{site.hoursNote}</p>
-              <p className="mt-1 text-xs text-muted-foreground">{site.listingSnippet}</p>
+              <HoursList />
+              <p className="mt-3 text-xs text-muted-foreground">{site.hoursNote}</p>
               <Button asChild variant="link" className="mt-3 h-auto">
                 <ExternalLink href={site.links.listing}>
                   Check today’s hours <ArrowUpRight aria-hidden />

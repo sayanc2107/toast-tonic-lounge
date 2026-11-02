@@ -18,6 +18,7 @@ import { DietMark } from "@/components/site/diet-mark";
 import { InstagramSection } from "@/components/site/instagram-section";
 import { Parallax } from "@/components/site/parallax";
 import { Reveal } from "@/components/site/reveal";
+import { HoursList } from "@/components/site/hours-list";
 import { countItems, foodMenu, homeHighlights } from "@/lib/menu";
 import { site } from "@/lib/site";
 
@@ -336,7 +337,8 @@ function LocationPanel() {
             <div className="grid gap-1 py-5 sm:grid-cols-[8rem_1fr]">
               <dt className="eyebrow pt-1">Hours</dt>
               <dd className="text-muted-foreground">
-                {site.hoursNote}{" "}
+                <HoursList compact />
+                <span className="mt-2 block text-xs">{site.hoursNote}</span>{" "}
                 <ExternalLink
                   href={site.links.listing}
                   className="text-foreground underline decoration-rule underline-offset-4 hover:decoration-primary"

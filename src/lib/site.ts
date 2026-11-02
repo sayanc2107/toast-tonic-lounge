@@ -27,8 +27,16 @@ export const site = {
     local: "077997 93737",
     href: "tel:+917799793737",
   },
-  hoursNote: "Hours vary — check today's hours on the live listing.",
-  listingSnippet: "Listing last showed: opens 12:30 pm.",
+  hoursNote: "Holiday hours may differ — check today's hours on the live listing.",
+  hours: [
+    { day: "Monday", time: "12:30 pm – 12 am" },
+    { day: "Tuesday", time: "12:30 pm – 12 am" },
+    { day: "Wednesday", time: "12:30 pm – 12 am" },
+    { day: "Thursday", time: "12:30 pm – 12 am" },
+    { day: "Friday", time: "12:30 pm – 1 am" },
+    { day: "Saturday", time: "12:30 pm – 1 am" },
+    { day: "Sunday", time: "12:30 pm – 12 am" },
+  ],
   lgbtqFriendly: true,
   links: {
     reserve: "https://www.google.com/maps/reserve/v/dine/c/8qn_4Yg3MAI",
